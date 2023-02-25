@@ -47,12 +47,26 @@ background-color: white;
                 align-items: center;
                 padding: 5px;
                 cursor: pointer;
+                &:hover{
+                    background-color: hsla(233, 87%, 31%, 0.874);
+                    color: #fff
+                }
+
+                span{
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #888;
+                    margin-left: 10px;
+                    margin-top: 11px;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: #fff;
+                    }
+                }
               
 
-                &:hover{
-                    background-color: #272c4fb5;
-                    color: #fff;
-                }
+               
 
                 .icon{
                     font-size: 18px;
@@ -61,12 +75,7 @@ background-color: white;
                         color: white;
                     }
 
-                    span{
-                        font-size: 13px;
-                        font-weight: 600;
-                        color: #888;
-                        margin-left: 10px;
-                    }
+                   
                 }
             }
         }
