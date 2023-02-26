@@ -24,7 +24,7 @@ const Home = () => {
 
 </div>
 
-<div className="chart">
+<div className="charts">
 
 <Feature/>
 <Chart/>

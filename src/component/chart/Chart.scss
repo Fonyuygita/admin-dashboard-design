@@ -1,4 +1,23 @@
 .chart{
     flex: 3;
+    -webkit-box-shadow: -2px -4px 14px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -4px 14px -1px rgba(0,0,0,0.75);
+    box-shadow: -2px -4px 14px -1px rgba(0,0,0,0.75);
+    padding: 10px;
+    transition: 1s all ease-in-out;
+    
+    &:hover{
+        margin-bottom: -2rem;
+        background-color: bisque;
+    }
 
+    .title{
+        text-align: center;
+        font-size: 23px;
+        margin-bottom: 1rem;
+    }
+    .chartGrid{
+        stroke: rgb(118, 82, 82);
+    }
+    
 }
