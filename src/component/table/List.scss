@@ -1,0 +1,54 @@
+.table{
+    -webkit-box-shadow: -2px -4px 14px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px -4px 14px -1px rgba(0,0,0,0.75);
+box-shadow: -2px -4px 14px -1px rgba(0,0,0,0.75);
+padding: 10px; 
+margin-top: 3rem;
+
+.tableCell{
+    text-align: center;
+    margin: 0 auto;
+    &.pending{
+        background-color: rgb(126, 219, 12);
+        color: white;
+        padding: 12px 16px;
+        height: 50%;
+    }  &.Approved{
+        background-color: rgb(63, 143, 63);
+        color: white;
+        padding: 22px;
+    }
+}
+
+.rowCell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    margin-left: -1rem;
+    margin: 0 auto;
+    text-align:left;
+   
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2rem;
+       
+        &::before{
+content: "";
+            height: 45px;
+            width: 45px;
+            background-color: #444;
+            border-radius: 50%;
+
+        }
+        
+    }
+
+}
+
+}

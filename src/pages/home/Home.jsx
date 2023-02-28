@@ -1,9 +1,14 @@
+
 import React from 'react'
 import Chart from '../../component/chart/Chart'
 import Feature from '../../component/feature/Feature'
 import Navbar from '../../component/navbar/Navbar'
 import Sidebar from '../../component/sidebar/Sidebar'
 import Widget from '../../component/widgets/Widget'
+import List from '../../component/table/List'
+
+
+
 import "./Home.scss"
 
 
@@ -30,6 +35,14 @@ const Home = () => {
 <Chart/>
 
 </div>
+
+<div className="listContainer">
+
+<div className="listTitle">Latest Transactions</div>
+<List/>
+
+</div>
+
 
     </div>
     </div>
