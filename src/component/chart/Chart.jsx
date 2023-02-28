@@ -19,7 +19,7 @@ const Chart = () => {
     
     {
       "name": "January",
-      "Total": 2780,
+      "Total": 780,
       
     },
     {
@@ -29,12 +29,12 @@ const Chart = () => {
     },
     {
       "name": "March",
-      "Total": 2390,
+      "Total": 390,
       
     },
     {
       "name": "May",
-      "Total": 3490,
+      "Total": 390,
       
     }
   ]

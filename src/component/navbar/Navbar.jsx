@@ -50,7 +50,7 @@ Spanish
 
 
 <div className="item">
-<img src="https://previews.123rf.com/images/powerart/powerart1708/powerart170806023/84983024-isolated-user-outline-symbol-on-clean-background-vector-guest-element-in-trendy-style.jpg" alt="" className="avatar" />
+<img src="https://www.freecodecamp.org/news/content/images/2022/06/hrishikesh.jpg" alt="" className="avatar" />
 </div>
 
 

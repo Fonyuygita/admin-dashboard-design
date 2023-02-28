@@ -8,18 +8,22 @@ margin-top: 3rem;
 .tableCell{
     text-align: center;
     margin: 0 auto;
+   
+
+}
+.tableStatus{
+    padding: 5px;
     &.pending{
         background-color: rgb(126, 219, 12);
         color: white;
         padding: 12px 16px;
-        height: 50%;
+       
     }  &.Approved{
         background-color: rgb(63, 143, 63);
         color: white;
         padding: 22px;
     }
 }
-
 .rowCell{
     display: flex;
     align-items: center;
