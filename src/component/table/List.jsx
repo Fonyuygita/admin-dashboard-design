@@ -127,7 +127,11 @@ status:"pending"
               <TableCell className="tableCell">{row.date}</TableCell>
               <TableCell className="tableCell">{row.amount}</TableCell>
               <TableCell className="tableCell">{row.method}</TableCell>
-              <TableCell className={`tableStatus  ${row.status}`}>{row.status}</TableCell>
+              <TableCell className="tableCell">
+              <span className={`tableStatus  ${row.status}`} >
+              {row.status}
+              </span>
+              </TableCell>
             
             </TableRow>
           ))}

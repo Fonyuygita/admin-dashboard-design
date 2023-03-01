@@ -16,13 +16,31 @@
             -moz-box-shadow: -2px -4px 14px -1px rgba(0,0,0,0.75);
             box-shadow: -2px -4px 14px -1px rgba(0,0,0,0.75);
             padding: 20px;
+            position: relative;
+            height: 300px;
+
+            .editButton{
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 5px;
+                font-size: 12px;
+                color:#792679;
+                background-color: #d6b2d4;
+                border-radius: 2px;
+                cursor: pointer;
+
+            }
 
             .title{
-                font-size: 20px;
-                color: #444;
+                font-size: 16px;
+                color: #222;
                 text-align: center;
                 margin-bottom: 1rem;
             }
+            .item{
+                display: flex;
+                gap: 20px;
 
             img{
                 width: 200px;
@@ -30,9 +48,36 @@
                 margin: 0 auto;
                 border-radius: 50%;
                 object-fit: cover;
+                border: 4px dotted darkblue;
 
                 
             }
+
+            .details{
+                h1{
+                    margin-bottom: 30px;
+                    color: #333;
+                    font-size: 19px;
+                }
+
+                .detailI{
+                    margin-bottom: 20px;
+                    font-size: 14px;
+
+                    .itemKey{
+                        font-weight: bold;
+                        color: #333;
+                        margin-right: 5px;
+                    }
+
+                    .itemValue{
+                        font-weight: 300;
+                    }
+                }
+            }
+
+        }
+
 
         }
 
@@ -40,5 +85,20 @@
             flex: 2;
         }
     }
+
+    .bottom{
+        padding: 20px 30px;
+        -webkit-box-shadow: -2px -4px 14px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: -2px -4px 14px -1px rgba(0,0,0,0.75);
+        box-shadow: -2px -4px 14px -1px rgba(0,0,0,0.75);
+        
+    }
+    }
+
+    
+    .title{
+        font-size: 16px;
+        color: lightgray;
+        margin-bottom: 20px;
     }
 }

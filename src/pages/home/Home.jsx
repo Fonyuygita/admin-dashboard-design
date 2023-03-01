@@ -32,7 +32,7 @@ const Home = () => {
 <div className="charts">
 
 <Feature/>
-<Chart/>
+<Chart aspect={2/1} title={"Last 6 months revenue"}/>
 
 </div>
 

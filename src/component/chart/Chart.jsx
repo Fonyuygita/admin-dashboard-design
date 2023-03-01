@@ -12,8 +12,11 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const Chart = () => {
+
+
+const Chart = ({aspect, title}) => {
   // data goes here
+  
 
   const data = [
     
@@ -51,12 +54,11 @@ const Chart = () => {
 
 
 
-
   return (
     <div className="chart">
-    <div className="title">Here You can visualize the data</div>
+    <div className="title">{title}</div>
       
-      <ResponsiveContainer width="100%" aspect={2/1}>
+      <ResponsiveContainer width="100%" aspect={aspect}>
         <AreaChart
           width={730}
           height={250}
