@@ -4,6 +4,25 @@
     width: 80%;
     margin: 0 auto;
 
+    .dataTableTitle{
+        width: 100%;
+        font-size: 24px;
+        color: gray;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .linkTo{
+            cursor: pointer;
+            background-color: teal;
+            color: white;
+            border: 1px solid rgb(4, 67, 67);
+            padding: 11px 14px;
+            margin-bottom: 1rem;
+            border-radius: 12px;
+        }
+    }
+
     .cellWithImg{
         display: flex;
         align-items: center;

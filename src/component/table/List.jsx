@@ -119,7 +119,7 @@ status:"pending"
           {rows.map((row) => (
             <TableRow
               key={rows.id} >
-              <TableCell >{row.id} </TableCell>
+              <TableCell className='tableCell' >{row.id} </TableCell>
               <TableCell className="tableCell">{row.product}</TableCell>
               <TableCell className="tableCell">{row.sex}</TableCell>
               <TableCell className="rowCell"><img src={row.img} alt="" /></TableCell>

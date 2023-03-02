@@ -15,14 +15,17 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import SyncAlt from "@mui/icons-material/SyncAlt";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
+      <Link to="/" style={{textDecoration:"none"}}>
         <span className="logo">
           GitAdmin<a>X</a>
         </span>
+        </Link>
       </div>
       <hr />
 
@@ -34,15 +37,19 @@ const Sidebar = () => {
             <span>Dashboard</span>
           </li>
         <p className="title">LIST</p>
-
+        <Link to="/users" style={{textDecoration:"none"}}>
           <li>
             <GroupIcon />
             <span>Users</span>
           </li>
+          </Link>
+
+          <Link to="/products" style={{textDecoration:"none"}}>
           <li>
             <ProductionQuantityLimitsIcon className="icon" />
             <span>Product</span>
           </li>
+          </Link>
           <li>
             <BookmarkBorderIcon  className="icon "/>
             <span>Order</span>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Navbar.scss"
 
 // mui icons
@@ -9,8 +9,10 @@ import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
+import { DarkModeContext } from '../../context/darkMode';
 
 const Navbar = () => {
+  const {darkMode, toggle}=useContext(DarkModeContext);
   return (
     <div className='navbar'>
     <div className="wrapper">
@@ -25,7 +27,7 @@ Spanish
 </div>
 
 <div className="item">
-<DarkModeIcon className='icon'/>
+<DarkModeIcon className='icon' onClick={toggle}/>
 
 </div>
 
