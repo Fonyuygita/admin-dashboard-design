@@ -5,6 +5,7 @@ import Navbar from "../../component/navbar/Navbar"
 import DataTable from '../../component/datatables/DataTable'
 
 
+
 const List = () => {
   return (
     <div className="list">
