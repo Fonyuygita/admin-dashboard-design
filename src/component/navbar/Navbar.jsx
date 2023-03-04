@@ -9,7 +9,10 @@ import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
+import LightModeIcon from '@mui/icons-material/LightMode';
 import { DarkModeContext } from '../../context/darkMode';
+
+
 
 const Navbar = () => {
   const {darkMode, toggle}=useContext(DarkModeContext);
@@ -27,8 +30,11 @@ Spanish
 </div>
 
 <div className="item">
+{darkMode ? 
+<LightModeIcon className='icon' onClick={toggle}/>:
 <DarkModeIcon className='icon' onClick={toggle}/>
 
+}
 </div>
 
 

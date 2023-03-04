@@ -24,12 +24,14 @@
     .navbar{
         color: #999;
         border-color: #333;
+        background-color: #222;
 
         .search{
             border-color: gray;
 
             input{
                 background: transparent;
+                color: white;
             }
         }
     }
@@ -90,5 +92,6 @@
     }
     input{
         background-color: transparent;
+        color: #999;
     }
 }
