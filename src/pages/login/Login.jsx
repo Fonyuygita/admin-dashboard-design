@@ -45,8 +45,9 @@ signInWithEmailAndPassword(auth, email, password)
     <input type="email" name="" placeholder='email' onChange={e=>setEmail(e.target.value)} />
     <input type="password" name="" placeholder='password' onChange={e=>setPassword(e.target.value)} />
     <button type='submit'>Login</button>
-    </form>
     { error && <p>wrong user credentials</p> }
+
+    </form>
 
     </div>
   )
