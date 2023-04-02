@@ -1,6 +1,6 @@
 // import react-router-dom here
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/home/Home.jsx";
 import Login from "./pages/login/Login.jsx";
 import Single from "./pages/single/Single.jsx";
@@ -12,15 +12,25 @@ import { useContext } from "react";
 import { DarkModeContext } from "./context/darkMode.js";
 
 function App() {
+
+  const currentUser=false;
+
+  // protecting route function
+const RequiredAuth=({children})=>{
+// children refers to what is inside the component, in this case requiredAuth
+return currentUser ? children : <Navigate to="/login"/>
+}
+
   const {darkMode}=useContext(DarkModeContext);
   return (
     <div className={darkMode ? "dark" :""}>
       <BrowserRouter>
         <Routes>
           <Route path="/">
-            <Route index element={<Home />} />
-            <Route path="login" element={<Login />} />
-
+          <Route path="login" element={ <Login /> } />
+          
+            <Route index element={ <RequiredAuth> <Home /> </RequiredAuth> } />
+            
             <Route path="users">
               <Route index element={<List />} />
               <Route path=":userId" element={<Single />} />

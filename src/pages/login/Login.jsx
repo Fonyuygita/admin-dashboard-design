@@ -1,12 +1,20 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "./Login.scss"
 import { signInWithEmailAndPassword } from "firebase/auth";
 import {auth} from "../../firebase"
+import { AuthContext } from '../../context/AuthContext/AuthContext';
+import { useNavigate } from 'react-router-dom';
 const Login = () => {
   // create states
   const [email, setEmail]=useState("")
   const [password, setPassword]=useState("")
   const [error, setError]=useState(false)
+  const navigate=useNavigate();
+
+// get our stuff from our context folder
+const {dispatch}=useContext(AuthContext)
+ 
+
 
 // create our handle login function here
 
@@ -27,6 +35,12 @@ signInWithEmailAndPassword(auth, email, password)
     // Signed in 
     const user = userCredential.user;
     console.log(user);
+    // let us get our payload to our reducer using the dispatch from the context
+    dispatch({
+      type:"LOGIN",
+      payload:user
+    })
+    navigate("/")
     // ...
   })
   .catch((error) => {
